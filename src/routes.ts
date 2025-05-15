@@ -3,7 +3,7 @@ import multer from 'multer';
 
 import { isAuthenticated } from './middlewares/isAuthenticated';
 
-import uploadConfig from './config/multer';
+//import uploadConfig from './config/multer';
 
 import { CreateUserController } from './controllers/user/CreateUserController';
 import { AuthUserController } from './controllers/user/AuthUserController';
@@ -26,7 +26,7 @@ import { FinishOrderController } from './controllers/order/FinishOrderController
 
 const router = Router();
 
-const upload = multer(uploadConfig.upload('./tmp'));
+//const upload = multer(uploadConfig.upload('./tmp'));
 
 //---ROTAS USER---//
 router.post('/users', new CreateUserController().handle);
